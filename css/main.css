@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Lato", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+.opening-slide{
+    background-image: url("../images/firstbg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 50px 100px;
+}
+@media only screen and (max-width: 747px){
+    .opening-slide{
+        background-image: url("../images/firstbg.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 1500px !important;
+        padding: 50px 100px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .opening-slide{
+        background-image: url("../images/firstbg.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 1300px !important;
+        padding: 10px 20px !important;
+    }
+}
+.logo{
+    padding: 0 60px 0;
+}
+@media only screen and (max-width: 375px){
+    .logo{
+        justify-content: center !important;
+        padding:20px 0 0 0 !important;
+    }
+}
+
+.opening-slide-icons{
+    align-items: center;
+    padding: 100px 55px 20px 55px;
+}
+.opening-slide-icons i{
+    text-align: center;
+    border-radius: 50% 50%;
+    padding: 20px;
+    font-size: 30px;
+    margin-right: 10px;
+    color: white;
+    background-image: linear-gradient(90deg, #fd2740 0%, #ffc527 100%);
+}
+@media only screen and (max-width: 375px){
+    .opening-slide-icons{
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+}
+.opening-slide-text h3, p{
+    font-size: 20px;
+}
+.opening-slide-text{
+    padding: 10px 55px;
+    color: white;
+}
+.opening-slide-text h1{
+    font-size: 40px;
+    font-weight:bold;
+}
+@media only screen and (max-width: 375px){
+    .opening-slide-text{
+        padding: 10px 55px;
+        color: white;
+        text-align: center;
+    }
+    .opening-slide-text h1{
+        font-size: 30px;
+        font-weight:bold;
+    }
+}
+.opening-slide-form{
+    background: white;
+    padding: 15px 20px;
+    width: 30% !important;
+    border-radius: 5px;
+    margin-top: 30px !important;
+}
+.opening-slide-form h2{
+    font-size: 20px;
+}
+.opening-slide-form input{
+    /*padding:  !important;*/
+    width: 100% !important;
+    border-radius: 5px !important;
+    border: 1px solid #ccc !important;
+    background: #eee !important;
+}
+.opening-slide-form select{
+    visibility: visible !important;
+    padding: 10px !important;
+    width: 100% !important;
+    border-radius: 5px !important;
+    border: 1px solid #ccc !important;
+    background: #eee !important;
+    margin-bottom: 5px;
+}
+.opening-slide-form button{
+    padding: 15px;
+    width: 100%;
+    margin:auto;
+    border: none;
+    border-radius: 5px;
+    outline: hidden;
+    background-image: linear-gradient(90deg, #fd2740 20%, #ffc527 100%);
+}
+@media only screen and (max-width: 375px){
+    .opening-slide-form{
+        background: white;
+        padding: 20px;
+        width: 100% !important;
+        border-radius: 5px;
+        margin-top: 40px !important;
+    }
+}
+.welcome-title{
+    text-align: center;
+    line-height: 0.5;
+    padding: 50px 100px ;
+    font-size: 25px;
+}
+.welcome-stages{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+}
+.welcome-stages-ball{
+    background-image: linear-gradient(90deg, #fd2740 20%, #ffc527 100%);
+    border-radius: 50%;
+    text-align: center;
+    margin: 50px;
+}
+.welcome-stages-ball{
+    position: relative;
+}
+.welcome-stages-ball span{
+    position: absolute;
+    border-radius: 50%;
+    background: red;
+    padding: 4px 10px;
+    top:10px;
+    right: 15px;
+}
+.welcome-stages-ball-container{
+    position: relative;
+}
+.welcome-stages-ball-container img{
+    position: absolute;
+}
+.beginner{
+    padding: 70px 60px;
+}
+.intermediate{
+    padding: 70px 40px;
+}
+.expert{
+    padding: 70px 70px;
+}
+@media only screen and (max-width: 375px){
+    .welcome-title{
+        text-align: center;
+        line-height: 1.0;
+        padding: 50px ;
+        font-size: 25px;
+    }
+    .welcome-stages{
+        display: block;
+        padding: 50px;
+        justify-content: center;
+    }
+    .welcome-stages-ball{
+        background-image: linear-gradient(90deg, #fd2740 20%, #ffc527 100%);
+        padding: 60px 30px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .welcome-stages-ball-container img{
+        display: none;
+    }
+    .beginner{
+        padding: 60px 55px;
+        text-align: center;
+    }
+    .intermediate{
+        padding: 60px 32px;
+    }
+    .expert{
+        padding: 60px 55px;
+    }
+}
+.choose-courses{
+    width: 100%;
+    padding: 50px 0 25px 0;
+    margin-bottom: 30px !important;
+}
+
+.choose-courses li{
+    padding: 10px;
+}
+.owl-dots .owl-dot{
+    background: transparent !important;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: 0;
+    /*left: 50%;*/
+    margin-right: 16px !important;
+    border-radius: 50%;
+    border: none;
+    transition: .4s;
+    justify-content: center;
+}
+.owl-dots{
+    margin-left: 16px !important;
+
+}
+button.owl-dot:hover, button.owl-dot.active{
+    color: blue !important;
+}
+.inner-carousel img{
+    width: 100% !important;
+    height: 200px !important;
+}
+.item-holder{
+    margin:10px !important;
+    position: relative;
+    height: 400px;
+}
+.item-holder img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.playbutton{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.item-holder:hover img{
+    opacity: 0.7;
+}
+.item-holder:hover .playbutton{
+    opacity: 1;
+}
+
+.price{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 20px;
+    width: 35px;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    background-image: linear-gradient(90deg, #fd2740 20%, #ffc527 100%);
+    font-size: 12px;
+    padding: 2px;
+
+}
+.category{
+    position: absolute;
+    bottom: 185px;
+    left: 115px;
+    text-align: center;
+    color: white;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    width: 50px;
+    padding: 2px;
+    background-image: linear-gradient(90deg, #fd2740 20%, #ffc527 100%);
+}
+.details{
+    padding: 25px 15px;
+    height: 250px;
+}
+.details p{
+    font-size: 18px;
+
+}
+.details h5{
+    font-size: 20px;
+}
+@media only screen and (max-width: 375px){
+    .choose-courses{
+        width: 100% !important;
+        padding: 10px;
+    }
+    inner-carousel img{
+        width: 100% !important;
+    }
+    .category{
+        position: absolute;
+        bottom: 192px;
+        left: 135px;
+        text-align: center;
+        color: white;
+        border-radius: 2px;
+        font-size: 14px;
+        padding: 2px;
+        background-image: linear-gradient(90deg, #fd2740 20%, #ffc527 100%);
+    }
+
+
+}
+.teams-holder{
+    margin:10px !important;
+    position: relative;
+}
+.teams-holder img{
+    border-radius: 50% !important;
+    width: 200px !important;
+    height: 200px !important;
+    margin: auto !important;
+    backface-visibility: hidden;
+}
+.teams-holder h6:hover {
+    color: grey;
+}
+.overlay-links ul{
+    display: flex;
+    justify-content: space-between;
+}
+.overlay-links{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.teams-holder h6{
+    padding: 10px;
+}
+.teams-holder p{
+    font-size: 15px;
+    line-height: 1.5;
+}
+.teams-holder:hover .overlay-links{
+    opacity: 0.8;
+}
+.teams-holder:hover img{
+    opacity: 0.5;
+}
+.testimonials{
+    margin:10px !important;
+    background: white;
+    padding: 30px 25px;
+}
+.testimonials img{
+    border-radius: 50% !important;
+    width: 160px !important;
+    height: 160px !important;
+    margin: auto !important;
+    padding: 20px 20px;
+}
+.testimonials ul{
+    display: flex;
+    justify-content: center;
+}
+.testimonials i{
+    color: gold;
+}
+@media only screen and (max-width: 375px){
+    .testimonials{
+        margin:10px !important;
+        background: white;
+        padding: 30px 20px;
+        text-align: center;
+    }
+    .testimonials h1{
+        text-align: center;
+        font-size: 10px !important;
+    }
+}
+.partners{
+    height: 150px !important;
+
+}
+.partners-link img{
+    width: 95px !important;
+    height: 20px !important;
+}
+
+.bottom-bg{
+    background-image: url("../images/lastbg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 110px;
+    line-height: 1.9;
+}
+.bottom-bg .text-bt{
+    width: 70%;
+    margin: auto;
+}
+.bottom-bg h4{
+    font-weight: bold;
+}
+.bottom-bg .row{
+    padding: 40px 0;
+}
+.bottom-bg button{
+    background-image: linear-gradient(90deg, #fd2740 20%, #ffc527 100%);
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    width: 30%;
+    border: none;
+    color: white;
+}
+@media only screen and (max-width: 375px){
+
+    .bottom-bg{
+        background-image: url("../images/lastbg.png");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        line-height: 1.9;
+}
+    .bottom-bg button{
+        background-image: linear-gradient(90deg, #fd2740 20%, #ffc527 100%);
+        margin: 20px 0;
+        padding: 20px;
+        font-size: 20px;
+        border-radius: 5px;
+        width: 90%;
+        border: none;
+        color: white;
+    }
+}
+.page-footer{
+    padding: 20px 0 !important;
+}
+.footer{
+    display: flex;
+}
+.right-align ul{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 375px){
+    .right-align ul{
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
